@@ -24,8 +24,6 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
-        with:
-          node-version: 22
       - name: 테스트
         run: |
           docker run --rm --add-host api:127.0.0.1 \
